@@ -1,0 +1,29 @@
+*{
+ background-color: grey;
+ text-decoration: none;
+ margin: auto;
+}
+
+nav{
+  background-color: black;
+  padding: 15px;
+  position: auto;
+  margin-bottom: 5%;
+}
+
+a{
+  padding: 15px;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 0;
+  background-color: black;
+  color:blue;
+}
+
+a:hover{
+  background-color: lightgrey;
+}
+
+a:active{
+  color: green;
+}
