@@ -13,10 +13,54 @@
       <a href="Cardio-v.html" title="Cardiovascular Surgeon">cardiovascular surgeon</a>
       <a href="Engin.html" title="Engineer">Engineer</a>
       <a href="Recording-a.html" title="Recording Artist">Recroding Artists</a>
-      <a href="#" title="test">test</a>
+      <a href="tabnate.html" title="test">test</a>
     </nav>
-    <h1>This website is about career paths and it helps people learn about what they want to do in life </h1>
-    <h1>The careserds that we will focus on is being a cardiovascular surgeon, Engineer, and a recording artists</h1>
 
+    <button class="tablink" name="test" id="defaultOpen" onclick="openPage('Test')">test</button>
+    <button class="tablink" name="tost" id="secondTab" onclick="openPage('Tost')">tost</button>
+    <button class="tablink" name="test" id="thirdTab" onclick="openPage('Test2')">test2</button>
+    <button class="tablink" name="tost" id="fourthTab" onclick="openPage('Tost2')">tost2</button>
+
+      <div id="Test" class="tabcontent">
+        <h3>Test</h3>
+        <p>Test is where the heart is..</p>
+      </div>
+
+      <div id="Tost" class="tabcontent">
+        <h3>Tost</h3>
+        <p>Tost this fine day!</p>
+      </div>
+
+      <div id="Test2" class="tabcontent">
+        <h3>Test</h3>
+        <p>Test2 is where the heart is..</p>
+      </div>
+
+      <div id="Tost2" class="tabcontent">
+        <h3>Test</h3>
+        <p>Tost2 is where the heart is..</p>
+      </div>
+
+
+        <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+      </div>
   </body>
 </html>
