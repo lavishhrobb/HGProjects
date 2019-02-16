@@ -8,55 +8,56 @@
     <script src="index.js">...</script>
   </head>
   <body>
-    <nav>
-      <a href="index.html"title="Home" id="Hme" style="background-color: grey;color: purple;text-decoration:underline;">Home</a>
+    <nav id="top-nav-butn">
+      <a href="index.html"title="Home" id="Hme" style="">Home</a>
     </nav>
 
-    <button class="tablink" name="test" id="defaultOpen" onclick="openPage('Test')">test</button>
-    <button class="tablink" name="tost" id="secondTab" onclick="openPage('Tost')">tost</button>
-    <button class="tablink" name="test" id="thirdTab" onclick="openPage('Test2')">test2</button>
-    <button class="tablink" name="tost" id="fourthTab" onclick="openPage('Tost2')">tost2</button>
+    <div id="tab-butn">
+      <button class="tablink" name="test" id="defaultOpen" onclick="openPage('Test')">Cardio V Surgeon</button>
+      <button class="tablink" name="tost" id="secondTab" onclick="openPage('Tost')">Mecha Engineer</button>
+      <button class="tablink" name="test" id="thirdTab" onclick="openPage('Test2')">Recording Artist</button>
+      <button class="tablink" name="tost" id="fourthTab" onclick="openPage('Tost2')">null</button>
+    </div>
 
-      <div id="Test" class="tabcontent">
+    <div id="Test" class="tabcontent">
         <h3>Test</h3>
         <p>Test is where the heart is..</p>
-      </div>
+    </div>
 
-      <div id="Tost" class="tabcontent">
-        <h3>Tost</h3>
-        <p>Tost this fine day!</p>
-      </div>
+    <div id="Tost" class="tabcontent">
+      <h3>Tost</h3>
+      <p>Tost this fine day!</p>
+    </div>
 
-      <div id="Test2" class="tabcontent">
-        <h3>Test</h3>
-        <p>Test2 is where the heart is..</p>
-      </div>
+    <div id="Test2" class="tabcontent">
+      <h3>Test</h3>
+      <p>Test2 is where the heart is..</p>
+    </div>
 
-      <div id="Tost2" class="tabcontent">
-        <h3>Test</h3>
-        <p>Tost2 is where the heart is..</p>
-      </div>
+    <div id="Tost2" class="tabcontent">
+      <h3>Test</h3>
+      <p>Tost2 is where the heart is..</p>
+    </div>
 
 
-        <script>
-        function openPage(pageName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
+      <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
         }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-        </script>
-
-      </div>
+    </div>
   </body>
 </html>

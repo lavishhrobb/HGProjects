@@ -1,0 +1,10 @@
+body{
+  background-color: lightblue;
+}
+
+canvas{
+  background-color: lightgrey;
+  border: double 2px;
+  display: block;
+
+}

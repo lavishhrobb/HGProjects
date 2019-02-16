@@ -5,11 +5,19 @@ body, html {
   background-color: yellow;
 }
 
+#Hme{
+  text-decoration: none;
+  font-weight: bold;
+  color: purple;
+
+}
+
 nav{
 background-color: rgb(24,24,24);
 padding: 15px;
 position: auto;
 margin-bottom: 0.5%;
+position: auto;
 }
 
 a{
@@ -19,6 +27,7 @@ margin: auto;
 margin-right: 0;
 background-color: rgb(24,24,24);
 color:blue;
+position: auto;
 }
 
 a:hover{
@@ -40,21 +49,26 @@ button{
   font-size: 17px;
   font-weight: bolder;
   width: 25%;
+  box-shadow: blue 2px 3px;
+  margin: auto;
 }
 
 button:hover{
   background-color: darkgrey;
   color: green;
+  box-shadow: green 2px 3px;
 }
 
 button:active{
 background-color: grey;
 }
 
+
 .tabcontent{
-  background-color: lightblue;
-  color: white;
+  background-color: white;
+  color: black;
   display: none;
   padding: 100px 20px;
   height: 100%;
+  font-weight: bold;
 }
