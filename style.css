@@ -12,32 +12,6 @@ body, html {
 
 }
 
-nav{
-background-color: rgb(24,24,24);
-padding: 15px;
-position: auto;
-margin-bottom: 0.5%;
-position: auto;
-}
-
-a{
-padding: 15px;
-font-weight: bold;
-margin: auto;
-margin-right: 0;
-background-color: rgb(24,24,24);
-color:blue;
-position: auto;
-}
-
-a:hover{
-background-color: lightgrey;
-}
-
-a:active{
-color: green;
-}
-
 button{
   background-color: black;
   color: blue;
